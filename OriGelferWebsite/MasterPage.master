@@ -9,35 +9,35 @@
     </asp:ContentPlaceHolder>
     <style>
     img.gallery{
-    width:50px;
-    height:35px
+    width:60px;
+    height:40px
     }
     </style>
 </head>
 <body>
     <center>
-    <table border="1" style="width: 90%; height: 600px">
-          <tr style="height: 60px">
+    <table border="1" style="width: 90%; height: 600px; background-color:beige">
+          <tr style="height: 70px">
              <td style="text-align: center">
-                 <font style="color: grey; font-size: 50px">האתר שלי</font>
+                 <font style="color: peru; font-size: 50px">האתר שלי</font>
              </td>
               </tr>
         <tr style="height: 80px">
               <td style="text-align: center">
 
-                  <a href="aboutus.aspx"><img class="gallery" src="" /></a>
-                  <a href="controller.aspx"><img class="gallery" src="" /></a>
-                  <a href="detailsupdate.aspx"><img class="gallery" src="" /></a>
-                  <a href="enter.aspx"><img class="gallery" src="" /></a>
-                  <a href="exit.aspx"><img class="gallery" src="" /></a>
-                  <a href="gallery.aspx"><img class="gallery" src="" /></a>
-                  <a href="homepage.aspx"><img class="gallery" src="" /></a>
-                  <a href="search.aspx"><img class="gallery" src="" /></a>
-                  <a href="sign.aspx"><img class="gallery" src="" /></a>
-
+                  <a href="aboutus.aspx"><img class="gallery" src="images/אודות.jpg" /></a>
+                  <a href="controller.aspx"><img class="gallery" src="images/מנהל.jpg" /></a>
+                  <a href="detailsupdate.aspx"><img class="gallery" src="images/עדכוןפרטים.jpg" /></a>
+                  <a href="enter.aspx"><img class="gallery" src="images/כניסה.jpg" /></a>
+                  <a href="ex1taspx.aspx"><img class="gallery" src="images/יציאה.jpg" /></a>
+                  <a href="gallery.aspx"><img class="gallery" src="images/גלריה.jpg" /></a>
+                  <a href="homepage.aspx"><img class="gallery" src="images/דףהבית.jpg" /></a>
+                  <a href="search.aspx"><img class="gallery" src="images/חיפוש.jpg" /></a>
+                  <a href="sign.aspx"><img class="gallery" src="images/הרשמה.jpg" /></a>
+                  
               </td>
           </tr>
-         <tr =style="height: 440px">
+         <tr =style="height: 390px">
      <td style="text-align: center">
                 <asp:ContentPlaceHolder id="ContentPlaceHolder2" runat="server">
   
@@ -45,7 +45,7 @@
      </td>
  </tr>
 
-        <tr =style="height: 20px">
+        <tr =style="height: 40px">
             <td style="text-align: center">
 
             </td>
