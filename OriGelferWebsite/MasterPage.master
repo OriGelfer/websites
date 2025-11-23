@@ -7,9 +7,51 @@
     <title></title>
     <asp:ContentPlaceHolder id="head" runat="server">
     </asp:ContentPlaceHolder>
+    <style>
+    img.gallery{
+    width:50px;
+    height:35px
+    }
+    </style>
 </head>
 <body>
-    <h1>Ori's Website</h1>
+    <center>
+    <table border="1" style="width: 90%; height: 600px">
+          <tr style="height: 60px">
+             <td style="text-align: center">
+                 <font style="color: grey; font-size: 50px">האתר שלי</font>
+             </td>
+              </tr>
+        <tr style="height: 80px">
+              <td style="text-align: center">
+
+                  <a href="aboutus.aspx"><img class="gallery" src="" /></a>
+                  <a href="controller.aspx"><img class="gallery" src="" /></a>
+                  <a href="detailsupdate.aspx"><img class="gallery" src="" /></a>
+                  <a href="enter.aspx"><img class="gallery" src="" /></a>
+                  <a href="exit.aspx"><img class="gallery" src="" /></a>
+                  <a href="gallery.aspx"><img class="gallery" src="" /></a>
+                  <a href="homepage.aspx"><img class="gallery" src="" /></a>
+                  <a href="search.aspx"><img class="gallery" src="" /></a>
+                  <a href="sign.aspx"><img class="gallery" src="" /></a>
+
+              </td>
+          </tr>
+         <tr =style="height: 440px">
+     <td style="text-align: center">
+                <asp:ContentPlaceHolder id="ContentPlaceHolder2" runat="server">
+  
+              </asp:ContentPlaceHolder>
+     </td>
+ </tr>
+
+        <tr =style="height: 20px">
+            <td style="text-align: center">
+
+            </td>
+        </tr>
+    </table>
+        </center>
         <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
         
         </asp:ContentPlaceHolder>
