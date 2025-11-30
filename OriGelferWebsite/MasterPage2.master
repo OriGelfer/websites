@@ -1,0 +1,60 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage2.master.cs" Inherits="MasterPage2" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style>
+    img.gallery{
+    width:60px;
+    height:40px
+    }
+    </style>
+</head>
+<body>
+    <center>
+    <table border="1" style="width: 90%; height: 600px; background-color:beige">
+          <tr style="height: 70px">
+             <td style="text-align: center">
+                 <font style="color: peru; font-size: 50px">האתר שלי</font>
+             </td>
+              </tr>
+        <tr style="height: 80px">
+              <td style="text-align: center">
+
+                  <a href="aboutus2.aspx"><img class="gallery" src="images/אודות.jpg" /></a>
+                  <a href="controller2.aspx"><img class="gallery" src="images/מנהל.jpg" /></a>
+                  <a href="detailsupdate2.aspx"><img class="gallery" src="images/עדכוןפרטים.jpg" /></a>
+                  <a href="enter2.aspx"><img class="gallery" src="images/כניסה.jpg" /></a>
+                  <a href="exit2.aspx"><img class="gallery" src="images/יציאה.jpg" /></a>
+                  <a href="gallery2.aspx"><img class="gallery" src="images/גלריה.jpg" /></a>
+                  <a href="homepage2.aspx"><img class="gallery" src="images/דףהבית.jpg" /></a>
+                  <a href="search2.aspx"><img class="gallery" src="images/חיפוש.jpg" /></a>
+                  <a href="sign2.aspx"><img class="gallery" src="images/הרשמה.jpg" /></a>
+                  
+              </td>
+          </tr>
+         <tr =style="height: 390px">
+     <td style="text-align: center">
+                <asp:ContentPlaceHolder id="ContentPlaceHolder2" runat="server">
+  
+              </asp:ContentPlaceHolder>
+     </td>
+ </tr>
+
+        <tr =style="height: 40px">
+            <td style="text-align: center">
+
+            </td>
+        </tr>
+    </table>
+        </center>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+  
+</body>
+</html>
