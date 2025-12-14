@@ -11,7 +11,7 @@ public partial class AspNet : System.Web.UI.Page
          
     {
       
-    strKefel = "<table";
+    strKefel = "<table>";
         for (int i = 1; i <= 10; i++)
         {
             strKefel += "<tr>";

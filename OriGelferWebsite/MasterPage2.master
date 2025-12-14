@@ -16,10 +16,10 @@
 </head>
 <body>
     <center>
-    <table border="1" style="width: 90%; height: 600px; background-color:beige">
+    <table border="1" style="width: 90%; height: 600px; background-color:aliceblue">
           <tr style="height: 70px">
              <td style="text-align: center">
-                 <font style="color: peru; font-size: 50px">האתר שלי</font>
+                 <font style="color:navy; font-size: 50px">האתר שלי</font>
              </td>
               </tr>
         <tr style="height: 80px">

@@ -1,13 +1,14 @@
-﻿ <%@ Page Title="" Language="VB" MasterPageFile="~/MasterPage.master" AutoEventWireup="false" CodeFile="טופס.aspx.vb" Inherits="_Default" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage2.master" AutoEventWireup="true" CodeFile="form.aspx.cs" Inherits="_Default" %>
 
-<asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
-</asp:Content>
-<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
-            <form action="/action_page.php">
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder2" Runat="Server">
+                <form name="formPage" method="post" runat="server">
             <label for="fname">First name:</label><br>
             <input type="text" id="fname" name="fname" value=""><br>
-            <label for="lname">email:</label><br>
+            <label for="lname">Last name:</label><br>
             <input type="text" id="lname" name="lname" value=""><br><br>
+            <label for="lname">email:</label><br>
+            <input type="text" id="email" name="email" value=""><br><br>
+       
 
             <label>מספר הטלפון שלך:</label><br><br>
 
@@ -30,9 +31,9 @@
             <input type="number">
 
             <p>?אתה אוהד הפועל?</p>
-            <input type="radio" id="הפועל" name="fav_team value=כן">
+            <input type="radio" id="הפועל" name="fav_team">
             <label for="הפועל">כן</label><br>
-            <input type="radio" id="מכבי" name="fav_team" value=לא">
+            <input type="radio" id="מכבי" name="fav_team">
             <label for="מכבי">לא</label><br>
 
 
@@ -51,5 +52,14 @@
             <textarea name="message" rows="10" cols="30"></textarea>
             <br><br>
             <input type="submit" value="Submit">
+                    </form>
+    <%= firstName %>
+    <%= lastName %>
+    <%= fav_team %>
+    <%= fav_player %>
+    <%= message %>
+    <%=email %>
+
 </asp:Content>
+
 
