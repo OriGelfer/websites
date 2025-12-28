@@ -58,7 +58,7 @@
   <label for="doesntAgree">לא מסכים</label><br>
   
  <p>תפרט על עצמך.</p>
- <textarea name="message" rows="10" cols="30"></textarea></br>
+ <textarea name="message" rows="10" cols="30"></textarea><br>
 
           <input type="submit" value="Submit">
   </form>
