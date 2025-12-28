@@ -6,7 +6,7 @@
             <input type="text" id="fname" name="fname" value=""><br>
             <label for="lname">Last name:</label><br>
             <input type="text" id="lname" name="lname" value=""><br><br>
-            <label for="lname">email:</label><br>
+            <label for="email">email:</label><br>
             <input type="text" id="email" name="email" value=""><br><br>
        
 
@@ -31,10 +31,10 @@
             <input type="number">
 
             <p>?אתה אוהד הפועל?</p>
-            <input type="radio" id="הפועל" name="fav_team">
-            <label for="הפועל">כן</label><br>
-            <input type="radio" id="מכבי" name="fav_team">
-            <label for="מכבי">לא</label><br>
+            <input type="radio" id="hapoel" name="fav_team">
+            <label for="hapoel">כן</label><br>
+            <input type="radio" id="maccabi" name="fav_team">
+            <label for="maccabi">לא</label><br>
 
 
             </br>
@@ -50,7 +50,7 @@
 
 
             <textarea name="message" rows="10" cols="30"></textarea>
-            <br><br>
+            <br>
             <input type="submit" value="Submit">
                     </form>
     <%= firstName %>
