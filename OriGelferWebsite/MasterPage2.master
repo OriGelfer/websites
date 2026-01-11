@@ -33,7 +33,7 @@
                   <a href="gallery2.aspx"><img class="gallery" src="images/גלריה.jpg" /></a>
                   <a href="homepage2.aspx"><img class="gallery" src="images/דףהבית.jpg" /></a>
                   <a href="search2.aspx"><img class="gallery" src="images/חיפוש.jpg" /></a>
-                  <a href="sign2.aspx"><img class="gallery" src="images/הרשמה.jpg" /></a>
+                  <a href="signup2.aspx"><img class="gallery" src="images/הרשמה.jpg" /></a>
                   
               </td>
           </tr>
@@ -48,7 +48,7 @@
 
         <tr =style="height: 40px">
             <td style="text-align: center">
-
+<marquee scrollamount="5">67676767!!!האתר המגניב מאוד של אורי גלפר </marquee>
             </td>
         </tr>
     </table>

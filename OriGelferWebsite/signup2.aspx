@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage2.master" AutoEventWireup="true" CodeFile="sign2.aspx.cs" Inherits="sign2" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage2.master" AutoEventWireup="true" CodeFile="signup2.aspx.cs" Inherits="sign2" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
    
@@ -35,7 +35,7 @@
 <input type="text" id="phone" name="phone" maxlength="7" size="7">
 
           <p>:גיל</p>
- <input type="number">
+ <input type="number" id="age" name="age">
 
           <p>?איזה ענפי ספורט הכי מעניינים אותך</p>
  <input type="checkbox" id="basketball" name="sports" value="כדורסל">
