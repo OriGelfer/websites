@@ -5,7 +5,7 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder2" Runat="Server">
    <h1>טופס הרשמה</h1>
-     <form name="formPage" method="post" runat="server">
+     <form name="signupForm" method="post" runat="server">
 
        <label for="fname">:שם פרטי</label><br>
    <input type="text" id="fname" name="fname" value=""><br>
@@ -59,10 +59,11 @@
   
  <p>תפרט על עצמך.</p>
  <textarea name="message" rows="10" cols="30"></textarea><br>
-
+                            
           <input type="submit" value="Submit">
   </form>
-
+       <%=st %>                                                                                                                                     
 </asp:Content>
 
 
+                                

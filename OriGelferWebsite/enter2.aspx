@@ -4,11 +4,14 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder2" Runat="Server">
     <h1>כניסה</h1>
+    <form name="loginForm" method="post" runat="server">
              <label for="email">:אימייל</label><br>
 <input type="text" id="email" name="email" value=""><br><br>
          <label for="password">:סיסמא</label><br>
 <input type="text" id="password" name="password" value=""><br><br>
 <input type="submit" value="Submit">
+        </form>
+    <%=st %>
 </asp:Content>
 
 

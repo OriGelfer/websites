@@ -7,8 +7,36 @@ using System.Web.UI.WebControls;
 
 public partial class sign2 :  System.Web.UI.Page
 {
+    public string st = "";
     protected void Page_Load(object sender, EventArgs e)
     {
+        if (Page.IsPostBack)
+        {
+            string fname = Request.Form["fname"];
+            string lname = Request.Form["lname"];
+            string email = Request.Form["email"];
+            string password = Request.Form["password"];
+            string phone = Request.Form["phone"];
+            string sports = Request.Form["sports"];
+            string agreesToUpdates = Request.Form["agreesToUpdates"];
+            string message = Request.Form["message"];
+            string age = Request.Form["age"];
+
+            string sqlInsert =
+           "INSERT INTO tUsers VALUES (" +
+           "N'" + fname + "'," +
+           "N'" + lname + "'," +
+           "N'" + email + "'," +
+           "N'" + password + "'," +
+           "N'" + phone + "'," +
+           "N'" + sports + "'," +
+           "N'" + agreesToUpdates + "'," +
+           "N'" + message + "'," +
+           age + ")";
+
+            MyAdoHelper.DoQuery("MyDB.mdf", sqlInsert);
+            st = "נרשמת בהצלחה!";
+        }
 
     }
 }
