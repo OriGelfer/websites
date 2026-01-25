@@ -22,7 +22,14 @@ public partial class sign2 :  System.Web.UI.Page
             string message = Request.Form["message"];
             string age = Request.Form["age"];
 
-            string sqlInsert =
+            string sql =
+        "SELECT * FROM tUsers " +
+        "WHERE email = '" + email + "'"; 
+
+            bool userExists = MyAdoHelper.IsExist(sql);
+            if (!userExists)
+            {
+                string sqlInsert =
            "INSERT INTO tUsers VALUES (" +
            "N'" + fname + "'," +
            "N'" + lname + "'," +
@@ -33,9 +40,14 @@ public partial class sign2 :  System.Web.UI.Page
            "N'" + agreesToUpdates + "'," +
            "N'" + message + "'," +
            age + ")";
-
-            MyAdoHelper.DoQuery("MyDB.mdf", sqlInsert);
-            st = "נרשמת בהצלחה!";
+                    
+                MyAdoHelper.DoQuery("MyDB.mdf", sqlInsert);
+                Response.Redirect("enter2.aspx");
+            }
+            else
+            {
+                st = "המשתמש קיים";
+            }
         }
 
     }

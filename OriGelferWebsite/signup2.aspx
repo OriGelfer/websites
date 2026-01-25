@@ -15,7 +15,7 @@
 <input type="text" id="email" name="email" value=""><br><br>
          <label for="password">:סיסמא</label><br>
 <input type="text" id="password" name="password" value=""><br><br>
-         <label for="imut">אימות סיסמא:</label><br>
+         <label for="imut">:אימות סיסמא</label><br>
 <input type="text" id="imut" name="imut" value=""><br><br>
          <label>:מספר טלפון</label><br><br>
 
@@ -57,7 +57,7 @@
   <input type="radio" id="doesntAgree" name="agreesToUpdates" value="doesntAgree">
   <label for="doesntAgree">לא מסכים</label><br>
   
- <p>תפרט על עצמך.</p>
+ <p>.תפרט על עצמך</p>
  <textarea name="message" rows="10" cols="30"></textarea><br>
                             
           <input type="submit" value="Submit">
