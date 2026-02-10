@@ -16,22 +16,28 @@ public partial class enter2 :  System.Web.UI.Page
             string email = Request.Form["email"];
             string password = Request.Form["password"];
 
-            string sql =
-         "SELECT * FROM tUsers " +
-         "WHERE email = '" + email + "' " +
-         "AND password = '" + password + "'";
-
-            bool userExists = MyAdoHelper.IsExist(sql);
-            if (!userExists)
+            if (email == "OriAdmin1@gmail.com" && password == "112admin")
             {
-                st = "אימייל או סיסמה שגויים";
+                Response.Redirect("controller2.aspx");
             }
             else
             {
-                Response.Redirect("homepage2.aspx");
+                string sql =
+             "SELECT * FROM tUsers " +
+             "WHERE email = '" + email + "' " +
+             "AND password = '" + password + "'";
+
+                bool userExists = MyAdoHelper.IsExist(sql);
+                if (!userExists)
+                {
+                    st = "אימייל או סיסמה שגויים";
+                }
+                else
+                {
+                    Response.Redirect("homepage2.aspx");
+                }
+
             }
-
-
 
 
         }

@@ -23,8 +23,8 @@ public partial class sign2 :  System.Web.UI.Page
             string age = Request.Form["age"];
 
             string sql =
-        "SELECT * FROM tUsers " +
-        "WHERE email = '" + email + "'"; 
+         "SELECT * FROM tUsers " +
+         "WHERE email = '" + email + "'"; 
 
             bool userExists = MyAdoHelper.IsExist(sql);
             if (!userExists)
