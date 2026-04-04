@@ -7,14 +7,16 @@
     <title></title>
     <asp:ContentPlaceHolder id="head" runat="server">
     </asp:ContentPlaceHolder>
-    <style>
+    <style>        
     img.gallery{
     width:60px;
     height:40px
-    }
+    }   
     </style>
+    
 </head>
-<body>
+<body>   
+
     <center>
     <table border="1" style="width: 90%; height: 600px; background-color:aliceblue">
           <tr style="height: 70px">

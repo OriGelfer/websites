@@ -11,14 +11,14 @@ public partial class controller2 :  System.Web.UI.Page
     public string st = "";
     protected void Page_Load(object sender, EventArgs e)
     {
-        if (Page.IsPostBack)
+        
         {
             string fname = Request.Form["fname"];
             string lname = Request.Form["lname"];
 
             string sqlSelect = "SELECT * FROM tUsers WHERE " +
-             "fname = N'" + fname + "' AND " +
-             "lname = N'" + lname + "'";
+             "fname LIKE N'%" + fname + "%' AND " +
+             "lname LIKE N'%" + lname + "%'";
 
             DataTable dt = MyAdoHelper.ExecuteDataTable(sqlSelect);
 
