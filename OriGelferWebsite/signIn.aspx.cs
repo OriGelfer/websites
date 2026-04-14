@@ -18,6 +18,7 @@ public partial class enter2 :  System.Web.UI.Page
 
             if (email == "OriAdmin1@gmail.com" && password == "112admin")
             {
+                Session["userName"] = "אורי המנהל";
                 Response.Redirect("admin.aspx");
             }
             else
@@ -30,10 +31,12 @@ public partial class enter2 :  System.Web.UI.Page
                 bool userExists = MyAdoHelper.IsExist(sql);
                 if (!userExists)
                 {
+                    Session["userName"] = "אורח";
                     st = "אימייל או סיסמה שגויים";
                 }
                 else
                 {
+                    Session["userName"] = "משתמש רשום";
                     Response.Redirect("homePage.aspx");
                 }
 
