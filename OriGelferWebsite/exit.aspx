@@ -3,6 +3,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder2" Runat="Server">
-    <h1>יציאה</h1>
+ <%Session.Abandon();
+     Response.Redirect("signIn.aspx");%>
 </asp:Content>
 

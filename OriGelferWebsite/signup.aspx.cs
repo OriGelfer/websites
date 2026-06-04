@@ -46,7 +46,7 @@ public partial class sign2 :  System.Web.UI.Page
             }
             else
             {
-                st = "המשתמש קיים";
+                st = "המשתמש כבר קיים";
             }
         }
 

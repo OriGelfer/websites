@@ -10,7 +10,7 @@
     <style>        
     img.gallery{
     width:85px;
-    height:65px
+    height:65px;
     }   
     </style>
     
@@ -29,25 +29,42 @@
         <tr style="height: 80px">
               <td style="text-align: center">
 
-                 
+                 <%if (Session["user"] == "ok" || Session["nihul"] == "ok") {  %>
                   <a href="exit.aspx"><img class="gallery" src="images/יציאה.png" /></a>
+                  <%} %>
+
+                  <%if (Session["nihul"] == "ok") { %>
                    <a href="admin.aspx"><img class="gallery" src="images/מנהל.png" /></a>
-                   <a href="detailsupdate.aspx"><img class="gallery" src="images/עדכון%20פרטים.png" /></a>
+                  <%} %>
+
+                    <%if (Session["user"] == "ok" || Session["nihul"] == "ok") { %>
                   <a href="addItems.aspx"><img class="gallery" src="images/הוספת%20פריט.png" /></a>
+                 <%} %>
+
+                   <%if (Session["user"] == "ok" || Session["nihul"] == "ok") {  %>
                   <a href="itemsSearch.aspx"><img class="gallery" src="images/חיפוש%20פריט.png" /></a>
-                   <a href="gallery.aspx"><img class="gallery" src="images/גלריה.png" /></a>
-                   <a href="search.aspx"><img class="gallery" src="images/חיפוש.png" /></a>
+                  <%} %>
+                  
+                   <%if (Session["nihul"] != "ok") {  %>
+                  <a href="gallery.aspx"><img class="gallery" src="images/גלריה.png" /></a>
+                  <%} %>
+                  
+                   <%if (Session["user"] != "ok" && Session["nihul"] != "ok") {  %>
                   <a href="signIn.aspx"><img class="gallery" src="images/כניסה.png" /></a>
                    <a href="signup.aspx"><img class="gallery" src="images/הרשמה.png" /></a>
-                   <a href="aboutus.aspx"><img class="gallery" src="images/אודות.png" /></a>
+                  <%} %>
+
+                  <%if (Session["nihul"] != "ok") {  %>
+                  <a href="aboutus.aspx"><img class="gallery" src="images/אודות.png" /></a>
                    <a href="homePage.aspx"><img class="gallery" src="images/דף%20הבית.png" /></a>
+                  <%} %>
 
               </td>
           </tr>
          <tr =style="height: 390px">
      <td style="text-align: right; padding-right: 35px">
 
-        <h1> שלום <%=Session["userName"] %></h1>
+        <h2> שלום <%=Session["userName"] %></h2>
                 <asp:ContentPlaceHolder id="ContentPlaceHolder2" runat="server">
   
               </asp:ContentPlaceHolder>
